@@ -10,6 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var imageLogo: UIImageView!
+    
+    @IBOutlet weak var buttonLaunch: UIButton!
+    
+    @IBOutlet weak var imageBG: UIImageView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -18,6 +25,13 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    
+    @IBAction func LaunchCoolApp(sender: AnyObject) {
+        imageLogo.hidden = false
+        imageBG.hidden = false
+        buttonLaunch.hidden = true
     }
 
 
